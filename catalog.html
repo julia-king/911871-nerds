@@ -25,7 +25,51 @@
     <h1 class="page-title">Магазин готовых шаблонов</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр шаблонов</h2>
-      <!-- Здесь будет форма -->
+      <form class="filter" method="get" action="#">
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li class="filter-selection">
+              <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-selection">
+              <input type="radio" name="grid" value="fixed" id="fixed">
+              <label for="fixed">Фиксированная</label>
+            </li>
+            <li class="filter-selection">
+              <input type="radio" name="grid" value="rubber" id="rubber">
+              <label for="rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li class="filter-selection">
+              <input type="checkbox" name="slider" id="slider" checked>
+              <label for="slider">Слайдер</label>
+            </li>
+            <li class="filter-selection">
+              <input type="checkbox" name="advantageblock" id="advantageblock">
+              <label for="advantageblock">Блок преимуществ</label>
+            </li>
+            <li class="filter-selection">
+              <input type="checkbox" name="news" id="news" checked>
+              <label for="news">Новости</label>
+            </li>
+            <li class="filter-selection">
+              <input type="checkbox" name="gallery" id="gallery">
+              <label for="gallery">Галерея</label>
+            </li>
+            <li class="filter-selection">
+              <input type="checkbox" name="basket" id="basket">
+              <label for="basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
     <section class="catalog">
       <ul class="catalog-template">
@@ -102,6 +146,24 @@
           </div>
         </li>
       </ul>
+    </section>
+    <section class="feedback">
+      <h2>Напишите нам</h2>
+      <form class="feedback-form" action="#" method="post">
+        <p>
+          <label for="feedback-name">Ваше имя:</label>
+          <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input id="feedback-email" type="email" name="email" placeholder="e-mail@example.com">
+        </p>
+        <p>
+          <label for="feedback-letter">Текст письма:</label>
+          <input id="feedback-letter" type="text" name="letter" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
