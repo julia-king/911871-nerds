@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.basket {
+  color: #000000;
+}
+
+.site-navigation a:focus,
+.site-navigation a:hover,
+.basket:focus,
+.basket:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.basket:active {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.products-list {
+  list-style: none;
+}
+
+.products-item {
+  text-align: left;
+}
+
+.products-item-name {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.products-item-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto";
+  color: #283136;
+  text-transform: none;
+}
+
+.button1 {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+
+.button2 {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #00ca74;
+  border: none;
+}
+
+.button3 {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #efc84a;
+  border: none;
+}
+
+.feedback-button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+
+.button1:hover,
+.button1:focus {
+  color: rgb(255, 255, 255);
+  background-color: #e74246;
+}
+
+.button1:active {
+  color: rgba(255, 255, 255, 0.302);
+  background-color: #d7373b;
+}
+
+.button2:hover,
+.button2:focus {
+  color: rgb(255, 255, 255);
+  background-color: #00bc6c;
+}
+
+.button2:active {
+  color: rgba(255, 255, 255, 0.302);
+  background-color: #00aa62;
+}
+
+.button3:hover,
+.button3:focus {
+  color: rgb(255, 255, 255);
+  background-color: #eab534;
+}
+
+.button3:active {
+  color: rgba(255, 255, 255, 0.302);
+  background-color: #e5a722;
+}
+
+.feedback-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: #444444;
+  text-transform: none;
+}
+
+.feedback-item input:hover,
+.feedback-item input:focus {
+  border: 2px solid #b4b9bb;
+}
+
+.feedback-item input:active {
+  border: 2px solid #000000;
+}
+
+.feedback-head {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+}
+
+.feedback-item label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+}
+
+.footer-social {
+  list-style: none;
+  text-align: center;
+}
+
+.social-button {
+  color: #ffffff;
+  background-color: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #e74246;
+}
+
+.social-button:active {
+  color: #e37376;
+  background-color: #d7373b;
+}
+
+.friend-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+}
+
+.friend-text {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+}
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+  background-color: #eeeeee;
+  text-transform: none;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+  text-transform: none;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #4d4d4d;
+}
+
+.filter-input:disabled + label {
+  color: rgba(40, 49, 54, 0.302);
+}
+
+.filter-button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+  border: none;
+}
+
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  color: rgba(0, 0, 0, 0.302);
+  background-color: #d5d5d5;
+}
+
+.catalog-template {
+  list-style: none;
+  text-align: center;
+}
+
+.catalog-template-title {
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-template-info {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #666666;
+  text-transform: none;
+}
+
+.catalog-button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+
+.catalog-button:hover,
+.catalog-button:focus {
+  background-color: #e74246;
+}
+
+.catalog-button:active {
+  background-color: #d7373b;
+}

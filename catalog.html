@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Дизайн-студия "Нёрдс"</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,20 +28,20 @@
     <h1 class="page-title">Магазин готовых шаблонов</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр шаблонов</h2>
-      <form class="filter" method="get" action="#">
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
         <fieldset>
           <legend>Сетка:</legend>
           <ul>
             <li class="filter-selection">
-              <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
+              <input class="filter-input" type="radio" name="grid" value="adaptive" id="adaptive" checked>
               <label for="adaptive">Адаптивная</label>
             </li>
             <li class="filter-selection">
-              <input type="radio" name="grid" value="fixed" id="fixed">
+              <input class="filter-input" type="radio" name="grid" value="fixed" id="fixed">
               <label for="fixed">Фиксированная</label>
             </li>
             <li class="filter-selection">
-              <input type="radio" name="grid" value="rubber" id="rubber">
+              <input class="filter-input" type="radio" name="grid" value="rubber" id="rubber">
               <label for="rubber">Резиновая</label>
             </li>
           </ul>
@@ -47,28 +50,28 @@
           <legend>Особенности:</legend>
           <ul>
             <li class="filter-selection">
-              <input type="checkbox" name="slider" id="slider" checked>
+              <input class="filter-input" type="checkbox" name="slider" id="slider" checked>
               <label for="slider">Слайдер</label>
             </li>
             <li class="filter-selection">
-              <input type="checkbox" name="advantageblock" id="advantageblock">
+              <input class="filter-input" type="checkbox" name="advantageblock" id="advantageblock">
               <label for="advantageblock">Блок преимуществ</label>
             </li>
             <li class="filter-selection">
-              <input type="checkbox" name="news" id="news" checked>
+              <input class="filter-input" type="checkbox" name="news" id="news" checked>
               <label for="news">Новости</label>
             </li>
             <li class="filter-selection">
-              <input type="checkbox" name="gallery" id="gallery">
+              <input class="filter-input" type="checkbox" name="gallery" id="gallery">
               <label for="gallery">Галерея</label>
             </li>
             <li class="filter-selection">
-              <input type="checkbox" name="basket" id="basket">
+              <input class="filter-input" type="checkbox" name="basket" id="basket">
               <label for="basket">Корзина</label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="filter-button" type="submit">Показать</button>
       </form>
     </section>
     <section class="catalog">
@@ -79,10 +82,10 @@
           </div>
           <div class="catalog-template-card">
             <h3 class="catalog-template-title">Sedona</h3>
-            <p class="catalog-template-info">Информационный сайт
+            <p class="catalog-template-info">Информационный сайт<br>
               для туристов
             </p>
-            <a class="button" href="#">9 900 Руб.</a>
+            <a class="catalog-button" href="#">9 900 Руб.</a>
           </div>
         </li>
         <li>
@@ -91,10 +94,10 @@
           </div>
           <div class="catalog-template-card">
             <h3 class="catalog-template-title">Pink app</h3>
-            <p class="catalog-template-info">Продуктовый лендинг приложения
+            <p class="catalog-template-info">Продуктовый лендинг приложения<br>
               для iOS и Android
             </p>
-            <a class="button" href="#">9 900 Руб.</a>
+            <a class="catalog-button" href="#">9 900 Руб.</a>
           </div>
         </li>
         <li>
@@ -103,10 +106,10 @@
           </div>
           <div class="catalog-template-card">
             <h3 class="catalog-template-title">Barbershop</h3>
-            <p class="catalog-template-info">Сайт салона красоты.
+            <p class="catalog-template-info">Сайт салона красоты.<br>
               Для мужчин, да.
             </p>
-            <a class="button" href="#">9 900 Руб.</a>
+            <a class="catalog-button" href="#">9 900 Руб.</a>
           </div>
         </li>
         <li>
@@ -115,10 +118,10 @@
           </div>
           <div class="catalog-template-card">
             <h3 class="catalog-template-title">Mishka</h3>
-            <p class="catalog-template-info">Интернет-магазин
+            <p class="catalog-template-info">Интернет-магазин<br>
               вязаных игрушек
             </p>
-            <a class="button" href="#">9 900 Руб.</a>
+            <a class="catalog-button" href="#">9 900 Руб.</a>
           </div>
         </li>
         <li>
@@ -127,10 +130,10 @@
           </div>
           <div class="catalog-template-card">
             <h3 class="catalog-template-title">A plus</h3>
-            <p class="catalog-template-info">Лендинг курсов повышения
+            <p class="catalog-template-info">Лендинг курсов повышения<br>
               квалификации
             </p>
-            <a class="button" href="#">9 900 Руб.</a>
+            <a class="catalog-button" href="#">9 900 Руб.</a>
           </div>
         </li>
         <li>
@@ -139,26 +142,26 @@
           </div>
           <div class="catalog-template-card">
             <h3 class="catalog-template-title">Kvast</h3>
-            <p class="catalog-template-info">Промо-сайт производителя
+            <p class="catalog-template-info">Промо-сайт производителя<br>
               крафтового кваса
             </p>
-            <a class="button" href="#">9 900 Руб.</a>
+            <a class="catalog-button" href="#">9 900 Руб.</a>
           </div>
         </li>
       </ul>
     </section>
     <section class="feedback">
-      <h2>Напишите нам</h2>
-      <form class="feedback-form" action="#" method="post">
-        <p>
+      <h2 class="feedback-head">Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="feedback-item">
           <label for="feedback-name">Ваше имя:</label>
           <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
-        <p>
+        <p class="feedback-item">
           <label for="feedback-email">Ваш e-mail:</label>
           <input id="feedback-email" type="email" name="email" placeholder="e-mail@example.com">
         </p>
-        <p>
+        <p class="feedback-item">
           <label for="feedback-letter">Текст письма:</label>
           <input id="feedback-letter" type="text" name="letter" placeholder="В свободной форме">
         </p>
