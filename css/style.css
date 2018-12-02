@@ -10,8 +10,25 @@ body {
   background-color: #ffffff;
 }
 
+.main-header {
+  background-color: #eeeeee;
+  margin-bottom: 75px;
+}
+
 a {
   text-decoration: none;
+}
+
+.main-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  outline: 2px solid #001eff;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  outline: 2px solid #001eff;
 }
 
 .main-navigation {
@@ -19,11 +36,21 @@ a {
   line-height: 30px;
   font-weight: 600;
   color: #000000;
-  background-color: #eeeeee;
+  outline: 2px solid #001eff;
+}
+
+.basket {
+  width: 160px;
+  outline: 2px solid #001eff;
+  margin-left: auto;
 }
 
 .site-navigation {
+  width: 440px;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  outline: 2px solid #001eff;
 }
 
 .site-navigation a,
@@ -43,12 +70,31 @@ a {
   color: rgba(0, 0, 0, 0.302);
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 2px solid #001eff;
+}
+
+.products {
+  margin-bottom: 80px;
+  outline: 2px solid #001eff;
+}
+
 .products-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  outline: 2px solid #001eff;
 }
 
 .products-item {
+  width: 300px;
   text-align: left;
+  outline: 2px solid #001eff;
 }
 
 .products-item-name {
@@ -66,7 +112,7 @@ a {
   text-transform: none;
 }
 
-.button1 {
+.sites-button {
   font: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -78,7 +124,7 @@ a {
   border: none;
 }
 
-.button2 {
+.apps-button {
   font: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -90,7 +136,7 @@ a {
   border: none;
 }
 
-.button3 {
+.presents-button {
   font: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -114,115 +160,41 @@ a {
   border: none;
 }
 
-.button1:hover,
-.button1:focus {
+.sites-button:hover,
+.sites-button:focus {
   color: rgb(255, 255, 255);
   background-color: #e74246;
 }
 
-.button1:active {
+.sites-button:active {
   color: rgba(255, 255, 255, 0.302);
   background-color: #d7373b;
 }
 
-.button2:hover,
-.button2:focus {
+.apps-button:hover,
+.apps-button:focus {
   color: rgb(255, 255, 255);
   background-color: #00bc6c;
 }
 
-.button2:active {
+.apps-button:active {
   color: rgba(255, 255, 255, 0.302);
   background-color: #00aa62;
 }
 
-.button3:hover,
-.button3:focus {
+.presents-button:hover,
+.presents-button:focus {
   color: rgb(255, 255, 255);
   background-color: #eab534;
 }
 
-.button3:active {
+.presents-button:active {
   color: rgba(255, 255, 255, 0.302);
   background-color: #e5a722;
 }
 
-.feedback-item input {
-  font: inherit;
-  background-color: transparent;
-  border: 2px solid #d7dcde;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: left;
-  color: #444444;
-  text-transform: none;
-}
-
-.feedback-item input:hover,
-.feedback-item input:focus {
-  border: 2px solid #b4b9bb;
-}
-
-.feedback-item input:active {
-  border: 2px solid #000000;
-}
-
-.feedback-head {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 500;
-  text-align: left;
-  color: #000000;
-  text-transform: none;
-}
-
-.feedback-item label {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
-  text-align: left;
-  color: #000000;
-  text-transform: none;
-}
-
-.footer-social {
-  list-style: none;
-  text-align: center;
-}
-
-.social-button {
-  color: #ffffff;
-  background-color: #e1e1e1;
-}
-
-.social-button:hover,
-.social-button:focus {
-  background-color: #e74246;
-}
-
-.social-button:active {
-  color: #e37376;
-  background-color: #d7373b;
-}
-
-.friend-title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 700;
-  text-align: left;
-  color: #000000;
-  text-transform: none;
-}
-
-.friend-text {
-  font-size: 16px;
-  line-height: 22px;
-  text-align: left;
-  color: #000000;
-  text-transform: none;
-}
-
 .page-title {
+  margin-bottom: 75px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 600;
@@ -230,6 +202,26 @@ a {
   color: #000000;
   background-color: #eeeeee;
   text-transform: none;
+}
+
+.catalog {
+  width: 800px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-bottom: 20px;
+}
+
+.filters {
+  width: 260px;
+  margin-bottom: 75px;
+  outline: 2px solid #001eff;
 }
 
 .filter fieldset {
@@ -251,12 +243,12 @@ a {
   text-transform: none;
 }
 
-.filter-input:hover + label,
-.filter-input:focus + label {
+.filter-input:hover+label,
+.filter-input:focus+label {
   color: #4d4d4d;
 }
 
-.filter-input:disabled + label {
+.filter-input:disabled+label {
   color: rgba(40, 49, 54, 0.302);
 }
 
@@ -272,7 +264,6 @@ a {
   border: none;
 }
 
-
 .filter-button:hover,
 .filter-button:focus {
   background-color: #dfdfdf;
@@ -284,8 +275,14 @@ a {
 }
 
 .catalog-template {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
   list-style: none;
   text-align: center;
+  outline: 2px solid #001eff;
 }
 
 .catalog-template-title {
@@ -326,4 +323,96 @@ a {
 
 .catalog-button:active {
   background-color: #d7373b;
+}
+
+.feedback-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: #444444;
+  text-transform: none;
+}
+
+.feedback-item input:hover,
+.feedback-item input:focus {
+  border: 2px solid #b4b9bb;
+}
+
+.feedback-item input:active {
+  border: 2px solid #000000;
+}
+
+.feedback-head {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+}
+
+.feedback-item label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+  margin-top: 80px;
+  outline: 2px solid #001eff;
+}
+
+.footer-social {
+  margin: 0;
+  width: 260px;
+  list-style: none;
+  text-align: center;
+  outline: 2px solid #001eff;
+}
+
+.social-button {
+  color: #ffffff;
+  background-color: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #e74246;
+}
+
+.social-button:active {
+  color: #e37376;
+  background-color: #d7373b;
+}
+
+.friend {
+  width: 560px;
+  margin: 0 auto;
+  outline: 2px solid #001eff;
+}
+
+.friend-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+}
+
+.friend-text {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
 }
