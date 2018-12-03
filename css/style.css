@@ -12,6 +12,8 @@ body {
 
 .main-header {
   background-color: #eeeeee;
+  min-width: 1440px;
+  min-height: 540px;
   margin-bottom: 75px;
 }
 
@@ -19,38 +21,39 @@ a {
   text-decoration: none;
 }
 
-.main-navigation-wrapper {
+.main-navigation {
   display: flex;
-  justify-content: space-between;
-  outline: 2px solid #001eff;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1160px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #000000;
 }
 
 .main-header-logo {
   width: 160px;
   height: 65px;
-  outline: 2px solid #001eff;
-}
-
-.main-navigation {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 600;
-  color: #000000;
-  outline: 2px solid #001eff;
-}
-
-.basket {
-  width: 160px;
-  outline: 2px solid #001eff;
-  margin-left: auto;
+  padding: 50px 20px 20px 20px;
 }
 
 .site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   width: 440px;
   margin: 0;
-  padding: 0;
+  padding: 80px 140px 20px 20px;
+
   list-style: none;
-  outline: 2px solid #001eff;
+}
+
+.basket {
+  width: 130px;
+  margin: 0;
+  padding: 80px 20px 20px 20px;
 }
 
 .site-navigation a,
@@ -72,14 +75,14 @@ a {
 
 .container {
   width: 1160px;
-  margin: 0 auto;
+  margin-left: 120px;
+  margin-right: 120px;
   padding: 0 10px;
-  outline: 2px solid #001eff;
 }
 
 .products {
+  margin-right: 60px;
   margin-bottom: 80px;
-  outline: 2px solid #001eff;
 }
 
 .products-list {
@@ -88,13 +91,11 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 2px solid #001eff;
 }
 
 .products-item {
   width: 300px;
   text-align: left;
-  outline: 2px solid #001eff;
 }
 
 .products-item-name {
@@ -194,13 +195,11 @@ a {
 }
 
 .page-title {
-  margin-bottom: 75px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 600;
   text-align: center;
   color: #000000;
-  background-color: #eeeeee;
   text-transform: none;
 }
 
@@ -221,7 +220,6 @@ a {
 .filters {
   width: 260px;
   margin-bottom: 75px;
-  outline: 2px solid #001eff;
 }
 
 .filter fieldset {
@@ -236,6 +234,8 @@ a {
 }
 
 .filter ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
   font-size: 16px;
   line-height: 20px;
@@ -282,7 +282,6 @@ a {
   margin: 0;
   list-style: none;
   text-align: center;
-  outline: 2px solid #001eff;
 }
 
 .catalog-template-title {
@@ -368,15 +367,14 @@ a {
   justify-content: space-between;
   padding: 70px;
   margin-top: 80px;
-  outline: 2px solid #001eff;
 }
 
 .footer-social {
+  padding: 0;
   margin: 0;
   width: 260px;
   list-style: none;
   text-align: center;
-  outline: 2px solid #001eff;
 }
 
 .social-button {
@@ -397,7 +395,6 @@ a {
 .friend {
   width: 560px;
   margin: 0 auto;
-  outline: 2px solid #001eff;
 }
 
 .friend-title {
