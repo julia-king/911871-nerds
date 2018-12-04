@@ -98,6 +98,51 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
+.slider-item-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+  text-align: left;
+  text-transform: none;
+}
+
+.slider-item-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  text-align: left;
+  text-transform: none;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+
+.slider-button:hover,
+.slider-button:focus {
+  background-color: #e74246;
+}
+
+.slider-button:active {
+  color: #e37376;
+  background-color: #d7373b;
+}
+
 .products {
   margin-bottom: 80px;
 }
@@ -211,6 +256,97 @@ input[type="radio"].visually-hidden {
   background-color: #e5a722;
 }
 
+.info-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+  text-align: left;
+  text-transform: none;
+}
+
+.info-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  text-align: left;
+  text-transform: none;
+}
+
+.list-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+}
+
+.info-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  text-align: left;
+  text-transform: none;
+}
+
+.table-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+.cell-title {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+}
+
+.contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+}
+
+.contacts-phone,
+.contacts-address {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  text-align: left;
+  text-transform: none;
+}
+
+.contacts-button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+
+.contacts-button:hover,
+.contacts-button:focus {
+  background-color: #e74246;
+}
+
+.contacts-button:active {
+  color: #e37376;
+  background-color: #d7373b;
+}
+
 .page-title {
   font-size: 55px;
   line-height: 55px;
@@ -269,6 +405,57 @@ input[type="radio"].visually-hidden {
   color: rgba(40, 49, 54, 0.302);
 }
 
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.price-controls label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+}
+
+.sort-title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+}
+
+.sort-list a {
+  color: rgba(0, 0, 0, 0.302)
+}
+
+.sort-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+}
+
+.sort-list a:hover,
+.sort-list a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-list a:active,
+.sort-list-current a {
+  color: #000000;
+}
+
 .filter-button {
   font: inherit;
   font-size: 16px;
@@ -280,6 +467,7 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
   border: none;
 }
+
 
 .filter-button:hover,
 .filter-button:focus {
@@ -340,6 +528,44 @@ input[type="radio"].visually-hidden {
 .catalog-button:active {
   background-color: #d7373b;
 }
+
+.pagination-list a {
+  color: #000000;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pagination-item  {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.pagination-item a {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  color: #b7b7b7;
+  background-color: #d5d5d5;
+}
+
+.pagination-item-current a {
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
+}
+
 
 .feedback-item input {
   font: inherit;
