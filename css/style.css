@@ -57,21 +57,25 @@ input[type="radio"].visually-hidden {
 .main-header-logo {
   width: 160px;
   height: 65px;
-  padding: 50px 60px 20px 20px;
+  padding: 50px 20px 20px 45px;
 }
 
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
   width: 440px;
   margin: 0;
   padding: 0;
+  padding: 75px 140px 20px 150px;
   list-style: none;
 }
 
 .basket {
   width: 130px;
   margin-left: auto;
+  padding: 75px 20px 20px 50px;
 }
 
 .site-navigation a,
@@ -256,6 +260,16 @@ input[type="radio"].visually-hidden {
   background-color: #e5a722;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accuracy  {
+  display: flex;
+  flex-direction: column;
+}
+
 .info-title {
   font-size: 45px;
   line-height: 45px;
@@ -360,7 +374,7 @@ input[type="radio"].visually-hidden {
   width: 800px;
 }
 
-.catalog-columns {
+.filters-catalog {
   display: flex;
   justify-content: space-between;
 }
