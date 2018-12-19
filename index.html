@@ -168,18 +168,18 @@
             ул. Б. Конюшенная, д. 19/8</p>
           <p class="contacts-phone">
             тел. +7 (812) 275-75-75</p>
-          <a href="#" class="contacts-button">Напишите нам</a>
+          <a href="#" class="contacts-button contacts-button-map">Напишите нам</a>
         </div>
       </div>
     </section>
 
-    <section class="container feedback feedback-login visually-hidden">
+    <section class="container feedback feedback-login">
       <h2 class="feedback-head">Напишите нам</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="feedback-info">
           <p class="feedback-item">
             <label for="feedback-name">Ваше имя:</label>
-            <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            <input id="feedback-name" type="text" name="login" value="" placeholder="Имя Фамилия">
           </p>
           <p class="feedback-item">
             <label for="feedback-email">Ваш e-mail:</label>
@@ -211,6 +211,69 @@
       </p>
     </div>
   </footer>
+
+<script>
+
+  var link = document.querySelector(".contacts-button-map");
+
+  var popup = document.querySelector(".feedback-login");
+
+  var close = popup.querySelector(".modal-close");
+
+  var form = popup.querySelector("form");
+  var login = popup.querySelector("[name=login]");
+  var email = popup.querySelector("[name=email]");
+  var isStorageSupport = true;
+  var storage = "";
+
+  try {
+   storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  link.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+
+    if (storage) {
+      login.value = storage;
+      email.focus();
+    } else {
+      login.focus();
+    }
+  });
+
+  close.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!login.value || !email.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("login", login.value);
+      }
+    }
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+
+</script>
 </body>
 
 </html>
