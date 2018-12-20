@@ -764,9 +764,6 @@ input[type="radio"].visually-hidden {
 
   display: none;
 
-  top: -8px;
-  left: 240px;
-
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
@@ -873,7 +870,11 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-login {
+  top: 10px;
+  left: 50%;
+
   width: 960px;
+  margin-left: -440px;
   padding: 65px 100px 85px 100px;
 }
 
@@ -937,7 +938,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid #d7dcde;
 }
 
-.feedback-letter input {
+.feedback-letter textarea {
   display: flex;
   flex-wrap: wrap;
 
@@ -985,12 +986,12 @@ input[type="radio"].visually-hidden {
   border: 2px solid #000000;
 }
 
-.feedback-letter input:hover,
-.feedback-letter input:focus {
+.feedback-letter textarea:hover,
+.feedback-letter textarea:focus {
   border: 2px solid #b4b9bb;
 }
 
-.feedback-letter input:active {
+.feedback-letter textarea:active {
   border: 2px solid #000000;
 }
 
@@ -1014,7 +1015,7 @@ input[type="radio"].visually-hidden {
   margin-top: 30px;
 }
 
-.feedback-letter input[type="text"] {
+.feedback-letter textarea[type="text"] {
   box-sizing: border-box;
   width: 760px;
   height: 120px;
@@ -1790,7 +1791,7 @@ input[type="radio"].visually-hidden {
 .friend-text {
   margin: 0;
   margin-top: 11px;
-  
+
   font-size: 16px;
   line-height: 22px;
   text-align: left;
