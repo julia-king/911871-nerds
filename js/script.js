@@ -6,7 +6,7 @@
   var close = popup.querySelector(".modal-close");
 
   var form = popup.querySelector("form");
-  var login = popup.querySelector("[name=login]");
+  var login = popup.querySelector("[name=name]");
   var email = popup.querySelector("[name=email]");
   var isStorageSupport = true;
   var storage = "";
