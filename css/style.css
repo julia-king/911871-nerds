@@ -40,7 +40,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 1200px;/*1160px;*/
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -746,7 +746,7 @@ input[type="radio"].visually-hidden {
 .contacts {
   position: relative;
 
-  bottom: 370px;
+  top: 40px;
 
   width: 319px;
   height: 308px;
