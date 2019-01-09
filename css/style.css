@@ -165,12 +165,11 @@ input[type="radio"].visually-hidden {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 104px;
+  bottom: 100px;
   z-index: 100;
 
   width: 160px;
   height: 18px;
-  padding-left: 90px;
 
   text-align: center;
   font-size: 0;
@@ -220,17 +219,12 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item:nth-child(2) {
-/*  margin-top: -18px;
-  margin-right: -165px;*/
-
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
-  background-position: 80%;
+  background-position: 93%;
 }
 
 .slider-item:nth-child(3) {
-/*  margin-right: -50px;*/
-
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 99%;
@@ -297,6 +291,7 @@ input[type="radio"].visually-hidden {
   max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
+  margin-top: -20px;
 
   font-size: 55px;
   line-height: 55px;
@@ -751,8 +746,7 @@ input[type="radio"].visually-hidden {
 .contacts {
   position: relative;
 
-  top: 53px;
-  left: 5px;
+  bottom: 370px;
 
   width: 319px;
   height: 308px;
@@ -1778,6 +1772,10 @@ input[type="radio"].visually-hidden {
   padding: 0 5px 5px 5px;
 }
 
+.footer-social li:nth-child(1) {
+  padding-left: 0px;
+}
+
 .social-button:hover,
 .social-button:focus {
   background-color: #e74246;
@@ -1794,9 +1792,9 @@ input[type="radio"].visually-hidden {
 
 .friend {
   width: 560px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: 200px;
   padding-top: 7px;
-  padding-right: 9px;
 }
 
 .friend-title {
